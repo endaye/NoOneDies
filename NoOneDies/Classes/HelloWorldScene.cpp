@@ -7,9 +7,7 @@ USING_NS_CC;
 Scene* HelloWorld::createScene()
 {
     // 'scene' is an autorelease object
-    auto scene = Scene::createWithPhysics();
-    scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
-    //scene->getPhysicsWorld()->setGravity(Vec2(-1000, 0);
+    auto scene = Scene::create();
     
     // 'layer' is an autorelease object
     auto layer = HelloWorld::create();

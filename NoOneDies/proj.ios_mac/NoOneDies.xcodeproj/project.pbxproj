@@ -70,8 +70,10 @@
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 		FBB9829E1D27611E004F8222 /* Edge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBB982971D275D39004F8222 /* Edge.cpp */; };
-		FBB982A11D27623B004F8222 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBB9829F1D27623B004F8222 /* Hero.cpp */; };
-		FBB982A21D27623B004F8222 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBB9829F1D27623B004F8222 /* Hero.cpp */; };
+		FBF95BBB1D277BE4002C0A58 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBF95BB91D277BE4002C0A58 /* GameScene.cpp */; };
+		FBF95BBC1D277BE7002C0A58 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBF95BB91D277BE4002C0A58 /* GameScene.cpp */; };
+		FBF95BBF1D277ED5002C0A58 /* StartUpScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBF95BBD1D277ED5002C0A58 /* StartUpScene.cpp */; };
+		FBF95BC01D277ED5002C0A58 /* StartUpScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBF95BBD1D277ED5002C0A58 /* StartUpScene.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,8 +177,10 @@
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		FBB982971D275D39004F8222 /* Edge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Edge.cpp; sourceTree = "<group>"; };
 		FBB982981D275D39004F8222 /* Edge.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Edge.hpp; sourceTree = "<group>"; };
-		FBB9829F1D27623B004F8222 /* Hero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hero.cpp; sourceTree = "<group>"; };
-		FBB982A01D27623B004F8222 /* Hero.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Hero.hpp; sourceTree = "<group>"; };
+		FBF95BB91D277BE4002C0A58 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
+		FBF95BBA1D277BE4002C0A58 /* GameScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameScene.hpp; sourceTree = "<group>"; };
+		FBF95BBD1D277ED5002C0A58 /* StartUpScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StartUpScene.cpp; sourceTree = "<group>"; };
+		FBF95BBE1D277ED5002C0A58 /* StartUpScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StartUpScene.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,8 +322,10 @@
 				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
 				FBB982971D275D39004F8222 /* Edge.cpp */,
 				FBB982981D275D39004F8222 /* Edge.hpp */,
-				FBB9829F1D27623B004F8222 /* Hero.cpp */,
-				FBB982A01D27623B004F8222 /* Hero.hpp */,
+				FBF95BB91D277BE4002C0A58 /* GameScene.cpp */,
+				FBF95BBA1D277BE4002C0A58 /* GameScene.hpp */,
+				FBF95BBD1D277ED5002C0A58 /* StartUpScene.cpp */,
+				FBF95BBE1D277ED5002C0A58 /* StartUpScene.hpp */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -522,9 +528,10 @@
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				FBF95BBF1D277ED5002C0A58 /* StartUpScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
-				FBB982A11D27623B004F8222 /* Hero.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				FBF95BBB1D277BE4002C0A58 /* GameScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,11 +540,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBF95BBC1D277BE7002C0A58 /* GameScene.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				FBB9829E1D27611E004F8222 /* Edge.cpp in Sources */,
+				FBF95BC01D277ED5002C0A58 /* StartUpScene.cpp in Sources */,
 				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
-				FBB982A21D27623B004F8222 /* Hero.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
